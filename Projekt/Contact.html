@@ -15,11 +15,11 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <title>Pokemons - News</title>
+    <title>Pokemons - Contact</title>
 </head>
 <body>
 
-    <header>
+    <header class="contact-header"> 
         <nav>
             <div class="logo">
                 <img src="Slike/Logo-pokemon.png">
@@ -41,49 +41,39 @@
 
         <div class="header-text">
             <h3>Catch 'em all</h3>
-            <h1>Read all news</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+            <h1>Contact us</h1>
             <img src="Slike/down-arrow (1).png">
         </div>
 
     </header>
 
 
-    <main>
-        <div class="news">
-            <article>
-                <a href="Article.html"><img src="Slike/Pikachu.png"></a>
-                <div class="content">
-                    <h4>20.10.</h4>
-                    <a href="Article.html"><h3>Pikachu...</h3></a>
-                    <p>Pikachu that can generate powerful electricity have cheek sacs that are extra soft and super stretchy.</p>
-                    <a href="Article.html"><span class="line">read more...</span></a>
-                </div>
-            </article>
+    <main class="contact-main">
+        <div class="contact-details">
+            <form>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br>
+                <label for="mail">E-mail:</label><br>
+                <input type="email" id="mail" name="mail"><br>
 
-            <article>
-                <a href="Article.html"><img src="Slike/Machop.png"></a>
-                <div class="content">
-                    <h4>20.10.</h4>               
-                    <a href="Article.html"><h3>Machop...</h3></a>
-                    <p>Its whole body is composed of muscles. Even though it’s the size of a human child, it can hurl 100 grown-ups.</p>
-                    <a href="Article.html"><span class="line">read more...</span></a>
-                </div>
-            </article>
+                <label for="countries">Choose a country:</label><br>
+                <select id="countries" name="countries">
+                    <option value="cro">Croatia</option>
+                    <option value="slo">Slovenia</option>
+                    <option value="ita">Italy</option>
+                    <option value="fra">France</option>
+                </select><br>
+                
+                <label for="message">Your message:</label><br>
+                <textarea name="message" rows="5" cols="30"></textarea><br><br>
 
-            <article>
-                <a href="Article.html"><img src="Slike/Squirtle.png"></a>
-                <div class="content">
-                    <h4>20.10.</h4>
-                    <a href="Article.html"><h3>Squirtle...</h3></a>
-                    <p>When it retracts its long neck into its shell, it squirts out water with vigorous force.</p>
-                    <a href="Article.html"><span class="line">read more...</span></a>
-                </div>
-            </article>
+                <input type="submit" value="Send"><br><br>
+            </form>
 
-            
-            <div class="clear"></div>
-            
+            <div class="mapouter"><div class="gmap_canvas"><iframe width="100%" height="300" id="gmap_canvas" src="https://maps.google.com/maps?q=Vrbik%20III,%20Zagreb&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://123movies-to.org"></a><br><style>.mapouter{position:relative;text-align:right;height:300px;width:100%;}</style><a href="https://www.embedgooglemap.net">embedgooglemap.net</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:300px;width:100%;}</style></div></div>
+
         </div>
 
     </main>
