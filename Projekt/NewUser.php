@@ -13,6 +13,7 @@
     $address = $_REQUEST['address'];
     $birth = $_REQUEST['birth'];
     $password = $_REQUEST['password'];
+    $role = 'Visitor';
 
     $hashPassword = password_hash($password, 
           PASSWORD_DEFAULT);
@@ -52,8 +53,8 @@
         endwhile; 
     }
     
-    $sql = "INSERT INTO users (FirstName, LastName, Email, CountryID, City, Adress, Birth, Password, Username)
-    VALUES('$firstname', '$lastname', '$email', '$country', '$city', '$address', '$birth', '$hashPassword', '$username')";
+    $sql = "INSERT INTO users (FirstName, LastName, Email, CountryID, City, Adress, Birth, Password, Username, Role)
+    VALUES('$firstname', '$lastname', '$email', '$country', '$city', '$address', '$birth', '$hashPassword', '$username', '$role')";
 
     ?>
         <head>
